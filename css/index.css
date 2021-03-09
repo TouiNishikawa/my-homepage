@@ -55,7 +55,7 @@ body.scroll-lock {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: #10394b;
+  /*background-color: #10394b;*/
   display: block;
   position: absolute;
   left: 0;
