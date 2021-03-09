@@ -1,0 +1,79 @@
+/* kv https://webkore.site/video-tag/ */
+.header-box{
+  height: 100vh;
+  display: flex;
+}
+
+.header{
+  background-color: rgb(0, 0, 30);
+  height: 10vh;
+  width: 100vw;
+}
+
+@media screen and (min-width:100vh) {
+  .header{
+    background-color:rgb(0, 0, 30);
+    margin-left: auto;
+    height: 100vh;
+    width: 10vw;
+  }
+}
+/*
+.pattern {
+  width: 100%;
+  height: 100%;
+  background: url(http://www.webcreatorbox.com/sample/images/yokojima.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+*/
+
+/* video */
+.video{
+  width: 100%;
+  height: 100vh;
+  background: url(img/top.png) no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -10;  
+}
+
+.video::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #10394b;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .0;
+}
+
+.video video{
+  display: none;
+}
+
+.video video{
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  /*width: 100vw;*/
+  height: 100vh;
+  /*width: auto;
+  height: auto;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (min-width: calc(100vh*16/9)) {
+  .video video{
+    height: auto;
+    width: 100vw;
+  }
+}
