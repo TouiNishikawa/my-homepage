@@ -3,7 +3,8 @@ var fs   = require('fs');
 var path = require('path');
 var mime = {
   ".html": "text/html",
-  ".css":  "text/css"
+  ".css":  "text/css",
+  ".mp4": "video/mp4"
   // 読み取りたいMIMEタイプはここに追記
 };
 
