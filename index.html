@@ -8,8 +8,33 @@
 
 <body>
   <div class="header-box">
-    <div class="header"></div>
+    <div class="header">
+        <div id="navArea">
+
+            <nav>
+              <div class="inner">
+                <ul>
+                  <li><a href="#">Text</a></li>
+                  <li><a href="#">Text</a></li>
+                  <li><a href="#">Text</a></li>
+                </ul>
+              </div>
+            </nav>
+          
+            <div class="toggle_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          
+            <div id="mask"></div>
+          
+          </div>
+
+    </div>
   </div>
+
+  
 
   <div class="video">
     <video class="video_pc" autoplay loop muted playsinline>
@@ -33,6 +58,25 @@
   var hSize = $(window).height();
     $('.video').height(hSize); // アドレスバーを除いたサイズを付与
   });
+
+(function($) {
+  var $nav   = $('#navArea');
+  var $btn   = $('.toggle_btn');
+  var $mask  = $('#mask');
+  var open   = 'open'; // class
+  // menu open close
+  $btn.on( 'click', function() {
+    if ( ! $nav.hasClass( open ) ) {
+      $nav.addClass( open );
+    } else {
+      $nav.removeClass( open );
+    }
+  });
+  // mask close
+  $mask.on('click', function() {
+    $nav.removeClass( open );
+  });
+} )(jQuery);
 
   </script>
 
