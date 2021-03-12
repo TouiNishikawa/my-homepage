@@ -53,18 +53,18 @@ nav .inner ul {
 nav .inner ul li {
   position: relative;
   margin: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(225,225,225,0.7);
 }
 nav .inner ul li a {
   display: block;
-  color: #333;
+  color: rgba(225,225,225,0.7);
   font-size: 14px;
   padding: 1em;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 nav .inner ul li a:hover {
-  background: #e4e4e4;
+  background: rgba(225,225,225,0.3);
 }
 @media screen and (max-width: 767px) {
   nav {
@@ -78,10 +78,10 @@ nav .inner ul li a:hover {
 .toggle_btn {
   display: block;
   position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 30px;
-  height: 30px;
+  top: 2vh;
+  right: 2vh;
+  width: 6vh;
+  height: 6vh;
   transition: all .5s;
   cursor: pointer;
   z-index: 3;
@@ -90,7 +90,7 @@ nav .inner ul li a:hover {
   display: block;
   position: absolute;
   left: 0;
-  width: 30px;
+  width: 6vh;
   height: 2px;
   background-color: #333;
   border-radius: 4px;
