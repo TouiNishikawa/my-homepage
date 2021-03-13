@@ -111,6 +111,9 @@ nav .inner ul li a:hover {
   background: rgba(225,225,225,0.3);
 }
 
+
+
+
 /*============
 .toggle_btn
 =============*/
@@ -129,20 +132,20 @@ nav .inner ul li a:hover {
   display: block;
   position: absolute;
   left: 0;
-  width: 5vh;
-  height: 0.5vh;
+  width: 30px;
+  height: 2px;
   background-color: #333;
   border-radius: 4px;
   transition: all .5s;
 }
 .toggle_btn span:nth-child(1) {
-  top: 0.1vh;
+  top: 4px;
 }
 .toggle_btn span:nth-child(2) {
-  top: 1.8vh;
+  top: 14px;
 }
 .toggle_btn span:nth-child(3) {
-  bottom: 0.1vh;
+  bottom: 4px;
 }
 .open .toggle_btn span {
   background-color: #fff;
