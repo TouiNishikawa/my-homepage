@@ -193,7 +193,7 @@ nav .inner ul li a:hover {
 */
 
 
-/* SNSs */
+/* SNS */
 
 .facebook{
   position: fixed;
@@ -354,6 +354,18 @@ nav .inner ul li a:hover {
   right:5vw;
 }
 
+#aboutme_2:hover {
+  width:22vh;
+  top:14vh;
+  left: calc(5vw - 1vh);
+}
+
+#works_2:hover {
+  width:22vh;
+  top:64vh;
+  right: calc(5vw - 1vh);
+}
+
 @media screen and (min-width:100vh) {
   #aboutme_1{
     width:20vh;
@@ -382,4 +394,77 @@ nav .inner ul li a:hover {
     left:auto;
     right:10vw;
   }
+
+  #aboutme_2:hover {
+    width:22vh;
+    top:14vh;
+    left: calc(10vw - 1vh);
+  }
+  
+  #works_2:hover {
+    width:22vh;
+    top:64vh;
+    right: calc(10vw - 1vh);
+  }
 }
+
+
+#aboutme_2 {
+  background: rgba(225,225,225,0);
+      -webkit-animation: spin 3s linear infinite;
+      -moz-animation: spin 3s linear infinite;
+      -ms-animation: spin 3s linear infinite;
+      -o-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+  }
+  @-moz-keyframes spin {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);}
+  }
+  @-ms-keyframes spin {
+    0% {-ms-transform: rotate(0deg);}
+    100% {-ms-transform: rotate(360deg);}
+  }
+  @-o-keyframes spin {
+    0% {-o-transform: rotate(0deg);}
+    100% {-o-transform: rotate(360deg);}
+  }
+  @keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+  #works_2 {
+    background: rgba(225,225,225,0);
+        -webkit-animation: spin 3s linear infinite;
+        -moz-animation: spin 3s linear infinite;
+        -ms-animation: spin 3s linear infinite;
+        -o-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
+    }
+    
+    @-webkit-keyframes spin {
+      0% {-webkit-transform: rotate(0deg);}
+      100% {-webkit-transform: rotate(360deg);}
+    }
+    @-moz-keyframes spin {
+      0% {-moz-transform: rotate(0deg);}
+      100% {-moz-transform: rotate(360deg);}
+    }
+    @-ms-keyframes spin {
+      0% {-ms-transform: rotate(0deg);}
+      100% {-ms-transform: rotate(360deg);}
+    }
+    @-o-keyframes spin {
+      0% {-o-transform: rotate(0deg);}
+      100% {-o-transform: rotate(360deg);}
+    }
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
