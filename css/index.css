@@ -322,3 +322,64 @@ nav .inner ul li a:hover {
   .video_pc {display: block;}
   .video_sp {display: none;}
 }
+
+/* ------------
+    Button
+---------------*/
+#aboutme_1{
+  width:20vh;
+  position: fixed;
+  top:15vh;
+  left:5vw;
+}
+#aboutme_2{
+  width:20vh;
+  position: fixed;
+  top:15vh;
+  left:5vw;
+}
+
+#works_1{
+  width:20vh;
+  position: fixed;
+  top:65vh;
+  left:auto;
+  right:5vw;
+}
+#works_2{
+  width:20vh;
+  position: fixed;
+  top:65vh;
+  left:auto;
+  right:5vw;
+}
+
+@media screen and (min-width:100vh) {
+  #aboutme_1{
+    width:20vh;
+    position: fixed;
+    top:15vh;
+    left:10vw;
+  }
+  #aboutme_2{
+    width:20vh;
+    position: fixed;
+    top:15vh;
+    left:10vw;
+  }
+  
+  #works_1{
+    width:20vh;
+    position: fixed;
+    top:65vh;
+    left:auto;
+    right:10vw;
+  }
+  #works_2{
+    width:20vh;
+    position: fixed;
+    top:65vh;
+    left:auto;
+    right:10vw;
+  }
+}
