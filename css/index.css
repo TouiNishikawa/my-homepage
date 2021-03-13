@@ -89,11 +89,16 @@ nav .inner ul {
   margin: 0;
   padding: 0;
 }
-nav .inner ul li {
+nav .inner_main {
   position: relative;
   margin: 0;
-  border-bottom: 1px solid rgba(225,225,225,0.7);
+  border-bottom: 1px solid rgba(225,225,225,0);
 }
+
+.inner_sub{
+  border-bottom: 1px solid rgba(225,225,225,0);
+}
+
 nav .inner ul li a {
   display: block;
   color: rgba(225,225,225,0.7);
@@ -105,6 +110,8 @@ nav .inner ul li a {
 nav .inner ul li a:hover {
   background: rgba(225,225,225,0.3);
 }
+
+
 
 /*
 @media screen and (max-width: 767px) {
