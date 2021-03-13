@@ -111,17 +111,6 @@ nav .inner ul li a:hover {
   background: rgba(225,225,225,0.3);
 }
 
-
-
-/*
-@media screen and (max-width: 767px) {
-  nav {
-    left: -220px;
-    width: 220px;
-  }
-}
-*/
-
 /*============
 .toggle_btn
 =============*/
@@ -140,20 +129,20 @@ nav .inner ul li a:hover {
   display: block;
   position: absolute;
   left: 0;
-  width: 30px;
-  height: 2px;
+  width: 5vh;
+  height: 0.5vh;
   background-color: #333;
   border-radius: 4px;
   transition: all .5s;
 }
 .toggle_btn span:nth-child(1) {
-  top: 4px;
+  top: 0.1vh;
 }
 .toggle_btn span:nth-child(2) {
-  top: 14px;
+  top: 1.8vh;
 }
 .toggle_btn span:nth-child(3) {
-  bottom: 4px;
+  bottom: 0.1vh;
 }
 .open .toggle_btn span {
   background-color: #fff;
