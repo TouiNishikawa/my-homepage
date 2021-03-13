@@ -102,7 +102,7 @@ nav .inner_main {
 nav .inner ul li a {
   display: block;
   color: rgba(225,225,225,0.7);
-  font-size: 14px;
+  font-size: 2vh;
   padding: 1em;
   text-decoration: none;
   transition-duration: 0.2s;
