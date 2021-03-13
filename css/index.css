@@ -1,24 +1,49 @@
 
 /* https://webkore.site/video-tag/ */
 
-.header{
+#header{
   background-color: rgb(0, 0, 30);
   height: 10%;
   width: 100%;
+  transition: all .5s;
 }
 
+.open #header{
+  background-color: rgb(0, 0, 30);
+  height: 50%;
+  width: 100%;
+}
+
+
 @media screen and (min-width:100vh) {
-  .header{
+  #header{
     background-color:rgb(0, 0, 30);
     margin-left: auto;
     height: 100%;
     width: 6%;
+    transition: all .5s;
+  }
+}
+
+@media screen and (min-width:100vh) {
+  .open #header{
+    background-color:rgb(0, 0, 30);
+    margin-left: auto;
+    height: 100%;
+    width: 25%;
   }
 }
 
 
 
-
+@media screen and (min-width:100vh) {
+  .open .header{
+    background-color:rgb(0, 0, 30);
+    margin-left: auto;
+    height: 100%;
+    width: 50%;
+  }
+}
 
 /*============
 nav
@@ -27,9 +52,9 @@ nav {
   display: block;
   position: fixed;
   top: 0;
-  left: -300px;
+  right: -100%;
   bottom: 0;
-  width: 300px;
+  width: 100%;
   background: #ffffff;
   overflow-x: hidden;
   overflow-y: auto;
@@ -39,9 +64,23 @@ nav {
   opacity: 0;
 }
 .open nav {
-  left: 0;
+  right: 0;
+  top: 10%;
   opacity: 1;
 }
+
+@media screen and (min-width:100vh) {
+  nav {
+    right: -25%;
+    width: 25%;
+  }
+  .open nav{
+    right: 0;
+    top: 10%;
+    opacity: 1;
+  }
+}
+
 nav .inner {
   padding: 25px;
 }
@@ -66,12 +105,16 @@ nav .inner ul li a {
 nav .inner ul li a:hover {
   background: rgba(225,225,225,0.3);
 }
+
+/*
 @media screen and (max-width: 767px) {
   nav {
     left: -220px;
     width: 220px;
   }
 }
+*/
+
 /*============
 .toggle_btn
 =============*/
@@ -121,7 +164,7 @@ nav .inner ul li a:hover {
 }
 /*============
 #mask
-=============*/
+=============
 #mask {
   display: none;
   transition: all .5s;
@@ -139,7 +182,7 @@ nav .inner ul li a:hover {
   cursor: pointer;
 }
 
-
+*/
 
 
 
