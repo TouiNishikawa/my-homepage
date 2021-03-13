@@ -208,7 +208,7 @@ nav .inner ul li a:hover {
   position: fixed;
   height: 10vh;
   top: 0;
-  left: 10vh;
+  left: 6vh;
   opacity: 0.45;
 }
 .instagram:hover {
@@ -218,7 +218,7 @@ nav .inner ul li a:hover {
   position: fixed;
   height: 10vh;
   top: 0;
-  left: 20vh;
+  left: 12vh;
   opacity: 0.7;
 }
 .mail:hover {
@@ -228,10 +228,9 @@ nav .inner ul li a:hover {
 @media screen and (min-width:100vh) {
   .facebook{
     position: fixed;
-    height: 6vw;
-    width: 6vw;
+    width: 4vw;
     top: 65vh;
-    left: 94vw;
+    left: 95vw;
     opacity: 0.7;
   }
   .facebook:hover {
@@ -239,10 +238,9 @@ nav .inner ul li a:hover {
   }
   .instagram{
     position: fixed;
-    height: 6vw;
-    width: 6vw;
+    width: 4vw;
     top: 75vh;
-    left: 94vw;
+    left: 95vw;
     opacity: 0.45;
   }
   .instagram:hover {
@@ -250,10 +248,9 @@ nav .inner ul li a:hover {
   }
   .mail{
     position: fixed;
-    height: 6vw;
-    width: 6vw;
+    width: 4vw;
     top: 85vh;
-    left: 94vw;
+    left: 95vw;
     opacity: 0.7;
   }
   .mail:hover {
