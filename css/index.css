@@ -507,7 +507,7 @@ main page
 
 #aboutme_content{
   position: relative;
-  height:200vh;
+  height:180vh;
   width: 90%;
   top:5%;
   left:5%;
@@ -532,7 +532,7 @@ main page
   color: rgba(225,225,225,1);
   font-family: Arial, Helvetica, sans-serif;
   
-  font-size: 2.6vw;
+  font-size: 2.8vw;
   line-height: 3.2vh;
 }
 
