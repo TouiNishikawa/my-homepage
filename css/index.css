@@ -336,13 +336,13 @@ nav .inner ul li a:hover {
 }
 
 #aboutme_1{
-  height:20vh;
+  height:20%;
   position: fixed;
   top:15vh;
   left:5vw;
 }
 #aboutme_2{
-  height:20vh;
+  height:20%;
   position: fixed;
   top:15vh;
   left:5vw;
@@ -364,7 +364,7 @@ nav .inner ul li a:hover {
 }
 
 #aboutme_2:hover {
-  height:22vh;
+  height:22%;
   
   top:14vh;
   left: calc(5vw - 1vh);
@@ -378,13 +378,13 @@ nav .inner ul li a:hover {
 
 @media screen and (min-width:100vh) {
   #aboutme_1{
-    height:20vh;
+    height:20%;
     position: fixed;
     top:15vh;
     left:10vw;
   }
   #aboutme_2{
-    height:20vh;
+    height:20%;
     position: fixed;
     top:15vh;
     left:10vw;
@@ -406,13 +406,13 @@ nav .inner ul li a:hover {
   }
 
   #aboutme_2:hover {
-    height:22vh;
+    height:22%;
     top:14vh;
     left: calc(10vw - 1vh);
   }
   
   #works_2:hover {
-    height:22vh;
+    height:22%;
     top:64vh;
     right: calc(10vw - 1vh);
   }
