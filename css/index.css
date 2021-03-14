@@ -493,6 +493,7 @@ main page
 
 #aboutme_content{
   position: relative;
+  height:200vh ;
   top:5%;
   left:5%;
   right:5%;
@@ -502,15 +503,16 @@ main page
 
 .title{
   color: rgba(225,225,225,1);
-  font-family: Arial;
-  font-size: 4vh;
-  line-height: 4vh;
-  bottom:4vh;
-}
+  font-family: "ヒラギノ角ゴ";
+  font-weight: inherit;
 
+  font-size: 4vh;
+  line-height: 8vh;
+}
 .text{
-  top:4vh;
   color: rgba(225,225,225,1);
-  font-size: 3vh;
-  line-height: 3vh;
+  font-family: "ヒラギノ角ゴ";
+  
+  font-size: 2.5vh;
+  line-height: 3.5vh;
 }
