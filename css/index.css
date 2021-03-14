@@ -510,20 +510,19 @@ main page
   height:150vh;
   width: 90%;
   top:5%;
-  left:100%;
+  left:5%;
   right:5%;
-  transition-delay: 0.1s;
 }
 
+/*
 #aboutme_content.open_page{
   left:5%;
-  transition-delay: 0.1s;
 }
-
+*/
 
 .name{
   color: rgba(225,225,225,1);
-  font-family: "ヒラギノ角ゴ";
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: inherit;
 
   font-size: 4vh;
@@ -531,7 +530,7 @@ main page
 }
 .text{
   color: rgba(225,225,225,1);
-  font-family: "ヒラギノ角ゴ";
+  font-family: Arial, Helvetica, sans-serif;
   
   font-size: 2vh;
   line-height: 3.2vh;
