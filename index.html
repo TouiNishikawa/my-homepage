@@ -17,13 +17,19 @@
       <source src="img/top_small.mp4" type="video/mp4"/>
     </video>
   </div>
-  
+
   <div class = "sns">
-    <img id="aboutme_1" src="img/aboutme_1.png">
-    <img id="aboutme_2" src="img/aboutme_2.png">
+    <img class="aboutme_1" src="img/aboutme_1.png">
+    <img class="aboutme_2" src="img/aboutme_2.png">
       
     <img id="works_1" src="img/works_1.png">
     <img id="works_2" src="img/works_2.png">
+  </div>
+
+  <div id = "main">
+    <div id="mask_aboutme">
+
+    </div>
   </div>
 
 
@@ -74,25 +80,38 @@
   var hSize = $(window).height();
     $('.video').height(hSize); // アドレスバーを除いたサイズを付与
   });
+  
+  (function($) {
+    var $nav   = $('#header-box');
+    var $btn   = $('.toggle_btn');
+    var $mask  = $('#mask');
+    var open   = 'open'; // class
+    // menu open close
+    $btn.on( 'click', function() {
+      if ( ! $nav.hasClass( open ) ) {
+        $nav.addClass( open );
+      } else {
+        $nav.removeClass( open );
+      }
+    });
 
-(function($) {
-  var $nav   = $('#header-box');
-  var $btn   = $('.toggle_btn');
-  var $mask  = $('#mask');
-  var open   = 'open'; // class
-  // menu open close
-  $btn.on( 'click', function() {
-    if ( ! $nav.hasClass( open ) ) {
-      $nav.addClass( open );
-    } else {
-      $nav.removeClass( open );
-    }
-  });
-  // mask close
-  $mask.on('click', function() {
-    $nav.removeClass( open );
-  });
-} )(jQuery);
+    var $mask_1   = $('#main');
+    var $btn_aboutme   = $('.aboutme_2');
+    var open_page   = 'open_page'; // class
+
+    // menu open close
+    $btn_aboutme.on( 'click', function() {
+      if ( ! $mask_1.hasClass( open_page ) ) {
+        $mask_1.addClass( open_page );
+        $nav.addClass( open_page );
+      } else {
+        $mask_1.removeClass( open_page );
+        $nav.removeClass( open_page );
+      }
+    });
+
+
+  } )(jQuery);
 
   </script>
 
