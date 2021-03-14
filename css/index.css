@@ -484,6 +484,8 @@ main page
   height:72%;
   background-color: rgba(0,0,30,0.9);
   transition: all .5s;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #aboutme_back.open_page{
