@@ -478,19 +478,23 @@ main page
 
 }
 
-#aboutme_content{
+#aboutme_back{
   
   position: relative;
   top: 28%;
   left:100vw;
   height:72%;
-  background-color: rgba(0,0,50,0.9);
+  background-color: rgba(0,0,30,0.9);
   transition: all .5s;
 }
 
-#aboutme_content.open_page{
+#aboutme_back.open_page{
   left:0;
   background-color: rgba(0,0,30,0.9);
+}
+
+#aboutme_content{
+  background: paleturquoise;
 }
 
 /*
