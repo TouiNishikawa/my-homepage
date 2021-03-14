@@ -292,6 +292,7 @@ nav .inner ul li a:hover {
   top: 57.5%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
 }
 
 @media screen and (min-width: calc(100vh*16/9)) {
@@ -309,6 +310,7 @@ nav .inner ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
 }
 
 @media screen and (min-width: calc(100vh*16/9)) {
@@ -330,49 +332,50 @@ nav .inner ul li a:hover {
 ---------------*/
 .sns{
   position: fixed;
-  widows: 100%;
-  height: 90;
+  width: 100%;
+  height: 90%;
   top:10%;
 }
 
 #aboutme_1{
   height:20%;
   position: fixed;
-  top:15vh;
+  top:15%;
   left:5vw;
 }
 #aboutme_2{
   height:20%;
   position: fixed;
-  top:15vh;
+  top:15%;
   left:5vw;
 }
 
 #works_1{
   height:20%;
   position: fixed;
-  top:65vh;
+  top:auto;
+  bottom:15%;
   left:auto;
   right:5vw;
 }
 #works_2{
   height:20%;
   position: fixed;
-  top:65vh;
+  top:auto;
+  bottom:15%;
   left:auto;
   right:5vw;
 }
 
 #aboutme_2:hover {
   height:22%;
-  
-  top:14vh;
+  top:14%;
   left: calc(5vw - 1vh);
 }
 
 #works_2:hover {
   height:22%;
-  top:64vh;
+  bottom:14%;
   right: calc(5vw - 1vh);
 }
 
