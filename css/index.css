@@ -483,37 +483,49 @@ nav .inner ul li a:hover {
     main page
     */
 
-    #mask_aboutme{
-      position: fixed;
-      top: 35%;
-      width: 100%;
-      height: 90%;
-      background-color: rgba(0,0,0,0.8);
-      z-index: 20;
-      display: none;
- 
-      transition: all .5s;
-      
-      left:100%;
-      
-    }
-    .open_page #mask_aboutme{
-      display:block;
-      left:0;
-      transition: all .5s;
-      transition-duration: 5s;
-    }
+#mask_aboutme{
+  position: fixed;
+  top: 35%;
+  width: 100%;
+  height: 90%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 20;
+  display: none;
+  transition: all .5s;  
+  left:100%;    
+}
+.open_page #mask_aboutme{
+  display:block;
+  left:0;
+  transition: all .5s;
+  transition-duration: 5s;
+  transition-duration: 0.2s;
+ }
 
-    #content_aboutme{
-      position: relative;
-      margin: 4%
-    }
+#content_aboutme{
+  margin: 5%;
+}
 
-    h1{
-      position: relative;
-      color: rgba(225,225,225,1);
-      font-family: Arial;
-    }
-    p{
-      color: rgba(225,225,225,1);
-    }
+
+#content_aboutme {
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+#content_aboutme::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
+
+
+.title{
+  color: rgba(225,225,225,1);
+  font-family: Arial;
+  font-size: 4vh;
+  bottom:4vh;
+}
+
+.context{
+  color: rgba(225,225,225,1);
+  font-size: 3.5vh;
+}
