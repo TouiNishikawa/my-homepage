@@ -1,6 +1,7 @@
 
 
 <head>
+  <title>西川登偉</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -28,43 +29,9 @@
   <div id="main">
     <div id="aboutme_back">
       <div id="aboutme_content">
-        <h1 class="title">西川 登偉 / Nishikawa Toui</h1>
-        <p class="text">text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-            text.text.text.text.text.text.text.text.text.text.
-
-        </p>
+        <h1 class="name">西川 登偉</h1>
+        <p class="text"> 1999年大阪生まれ。中高生時代、ロボット製作を行い、数々のロボット大会やアイデアコンテストで入賞を果たす。2018年和歌山県立医科大学に入学。inochi学生プロジェクトに所属し、coreメンバー、Susanosプロジェクトメンバー、inochi学生フォーラムメンターなどを務める。Gram Eyeプロジェクトではハードエンジニアとして活動。WAKA×YAMA、予防医学サークルなどの和歌山における地域・医療活動も行った。現在は病理AIの研究を行なっている。</p>
+        <h1 class="name">Nishikawa Toui</h1>
       </div>
     </div>
   </div>
@@ -135,19 +102,22 @@
       }
     });
 
-    var $main   = $('#aboutme_back');
+    var $back   = $('#aboutme_back');
+    var $content   = $('#aboutme_content');
     var $btn_aboutme_1   = $('#aboutme_1');
     var $btn_aboutme_2   = $('#aboutme_2');
     var open_page   = 'open_page'; // class
 
     // menu open close
     $btn_aboutme_2.on( 'click', function() {
-      if ( ! $main.hasClass( open_page ) ) {
-        $main.addClass( open_page );
+      if ( ! $back.hasClass( open_page ) ) {
+        $back.addClass( open_page );
+        $content.addClass( open_page );
         $btn_aboutme_1.addClass( open_page );
         $btn_aboutme_2.addClass( open_page );
       } else {
-        $main.removeClass( open_page );
+        $back.removeClass( open_page );
+        $content.removeClass( open_page );
         $btn_aboutme_1.removeClass( open_page );
         $btn_aboutme_2.removeClass( open_page );
       }

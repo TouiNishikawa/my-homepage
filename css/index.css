@@ -482,9 +482,9 @@ main page
   top: 28%;
   left:100vw;
   height:72%;
+  width: 100vw;
   background-color: rgba(0,0,30,0.9);
   transition: all .5s;
-  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -493,28 +493,46 @@ main page
   background-color: rgba(0,0,30,0.9);
 }
 
-#aboutme_content{
-  position: relative;
-  height:200vh ;
-  top:5%;
-  left:5%;
-  right:5%;
 
+#aboutme_back {
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+#aboutme_back::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
 }
 
 
-.title{
+
+#aboutme_content{
+  position: relative;
+  height:150vh;
+  width: 90%;
+  top:5%;
+  left:100%;
+  right:5%;
+  transition-delay: 0.1s;
+}
+
+#aboutme_content.open_page{
+  left:5%;
+  transition-delay: 0.1s;
+}
+
+
+.name{
   color: rgba(225,225,225,1);
   font-family: "ヒラギノ角ゴ";
   font-weight: inherit;
 
   font-size: 4vh;
-  line-height: 8vh;
+  line-height: 10vh;
 }
 .text{
   color: rgba(225,225,225,1);
   font-family: "ヒラギノ角ゴ";
   
-  font-size: 2.5vh;
-  line-height: 3.5vh;
+  font-size: 2vh;
+  line-height: 3.2vh;
 }
