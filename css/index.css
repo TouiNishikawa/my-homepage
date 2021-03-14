@@ -483,14 +483,14 @@ main page
   left:100vw;
   height:72%;
   width: 100vw;
-  background-color: rgba(0,0,30,0.9);
+  background-color: rgba(0,0,30,0.8);
   transition: all .5s;
   overflow-x: hidden;
 }
 
 #aboutme_back.open_page{
   left:0;
-  background-color: rgba(0,0,30,0.9);
+  background-color: rgba(0,0,30,0.8);
 }
 
 
