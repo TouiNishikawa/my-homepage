@@ -338,17 +338,19 @@ nav .inner ul li a:hover {
   
 }
 
-.aboutme_1{
+#aboutme_1{
   height:20%;
   position: absolute;
   top:5%;
   left:7vw;
+  transition: all .5s;
 }
-.aboutme_2{
+#aboutme_2{
   height:20%;
   position: absolute;
   top:5%;
   left:7vw;
+  transition: all .5s;
 }
 
 #works_1{
@@ -368,12 +370,21 @@ nav .inner ul li a:hover {
   right:7vw;
 }
 
-.aboutme_2:hover {
+#aboutme_2:hover {
   opacity: 0.5;
 }
 
 #works_2:hover {
   opacity: 0.5;
+}
+
+#aboutme_1.open_page{
+  top:3%;
+  transition: all .5s;
+}
+#aboutme_2.open_page{
+  top:3%;
+  transition: all .5s;
 }
 
 @media screen and (min-width:100vh) {
@@ -410,7 +421,7 @@ nav .inner ul li a:hover {
     top:14vh;
     left: calc(10vw - 1vh);
   }
-  
+
   #works_2:hover {
     height:22%;
     top:64vh;
@@ -419,7 +430,7 @@ nav .inner ul li a:hover {
 }
 
 
-.aboutme_2 {
+#aboutme_2 {
   background: rgba(225,225,225,0);
       -webkit-animation: spin 6s linear infinite;
       -moz-animation: spin 6s linear infinite;
@@ -479,10 +490,31 @@ nav .inner ul li a:hover {
       100% {transform: rotate(360deg);}
     }
 
-    /*
-    main page
-    */
+/*
+main page
+*/
+#main{
+  /*background-color: powderblue;*/
+  overflow: hidden;
 
+}
+
+#aboutme_content{
+  
+  position: relative;
+  top: 35vh;
+  left:100vw;
+  height:65%;
+  background-color: rgba(0,0,50,0.9);
+  transition: all .5s;
+}
+
+#aboutme_content.open_page{
+  left:0;
+  background-color: rgba(0,0,30,0.9);
+}
+
+/*
 #mask_aboutme{
   position: fixed;
   top: 35%;
@@ -509,10 +541,10 @@ nav .inner ul li a:hover {
 
 #content_aboutme {
   overflow-y: scroll;
-  -ms-overflow-style: none;    /* IE, Edge 対応 */
-  scrollbar-width: none;       /* Firefox 対応 */
+  -ms-overflow-style: none;    
+  scrollbar-width: none;    
 }
-#content_aboutme::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+#content_aboutme::-webkit-scrollbar {  
   display:none;
 }
 
@@ -529,3 +561,4 @@ nav .inner ul li a:hover {
   color: rgba(225,225,225,1);
   font-size: 3.5vh;
 }
+*/
