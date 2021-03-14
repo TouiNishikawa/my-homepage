@@ -329,7 +329,7 @@ nav .inner ul li a:hover {
     Button
 ---------------*/
 .sns{
-  position: fixed;
+  position: absolute;
   widows: 100%;
   height: 90;
   top:10%;
@@ -337,27 +337,27 @@ nav .inner ul li a:hover {
 
 #aboutme_1{
   height:20%;
-  position: fixed;
+  position: absolute;
   top:15vh;
   left:5vw;
 }
 #aboutme_2{
   height:20%;
-  position: fixed;
+  position: absolute;
   top:15vh;
   left:5vw;
 }
 
 #works_1{
   height:20%;
-  position: fixed;
+  position: absolute;
   top:65vh;
   left:auto;
   right:5vw;
 }
 #works_2{
   height:20%;
-  position: fixed;
+  position: absolute;
   top:65vh;
   left:auto;
   right:5vw;
@@ -421,11 +421,11 @@ nav .inner ul li a:hover {
 
 #aboutme_2 {
   background: rgba(225,225,225,0);
-      -webkit-animation: spin 3s linear infinite;
-      -moz-animation: spin 3s linear infinite;
-      -ms-animation: spin 3s linear infinite;
-      -o-animation: spin 3s linear infinite;
-      animation: spin 3s linear infinite;
+      -webkit-animation: spin 6s linear infinite;
+      -moz-animation: spin 6s linear infinite;
+      -ms-animation: spin 6s linear infinite;
+      -o-animation: spin 6s linear infinite;
+      animation: spin 6s linear infinite;
   }
   
   @-webkit-keyframes spin {
@@ -451,11 +451,11 @@ nav .inner ul li a:hover {
 
   #works_2 {
     background: rgba(225,225,225,0);
-        -webkit-animation: spin 3s linear infinite;
-        -moz-animation: spin 3s linear infinite;
-        -ms-animation: spin 3s linear infinite;
-        -o-animation: spin 3s linear infinite;
-        animation: spin 3s linear infinite;
+        -webkit-animation: spin 6s linear infinite;
+        -moz-animation: spin 6s linear infinite;
+        -ms-animation: spin 6s linear infinite;
+        -o-animation: spin 6s linear infinite;
+        animation: spin 6s linear infinite;
     }
     
     @-webkit-keyframes spin {
