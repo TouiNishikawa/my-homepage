@@ -349,14 +349,14 @@ nav .inner ul li a:hover {
 }
 
 #works_1{
-  height:20vh;
+  height:20%;
   position: fixed;
   top:65vh;
   left:auto;
   right:5vw;
 }
 #works_2{
-  height:20vh;
+  height:20%;
   position: fixed;
   top:65vh;
   left:auto;
@@ -371,7 +371,7 @@ nav .inner ul li a:hover {
 }
 
 #works_2:hover {
-  height:22vh;
+  height:22%;
   top:64vh;
   right: calc(5vw - 1vh);
 }
@@ -391,14 +391,14 @@ nav .inner ul li a:hover {
   }
   
   #works_1{
-    height:20vh;
+    height:20%;
     position: fixed;
     top:65vh;
     left:auto;
     right:10vw;
   }
   #works_2{
-    height:20vh;
+    height:20%;
     position: fixed;
     top:65vh;
     left:auto;
