@@ -3,11 +3,13 @@
 <head>
   <title>西川登偉</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
+
   <div class="video">
     <video class="video_pc" autoplay loop muted playsinline>
       <source src="img/top_comp.mp4" type="video/mp4"/>
@@ -18,7 +20,10 @@
     </video>
   </div>
 
-  <div class = "sns">
+  
+
+  <div class = "btn">
+    <div id = "remove"> </div>
     <img id="aboutme_1" src="img/aboutme_1.png">
     <img id="aboutme_2" src="img/aboutme_2.png">
       
@@ -73,7 +78,7 @@
     </div>
   </div>
 
-
+  
   <div id="header-box">
     <div id="header">
         <div id="navArea">
@@ -191,6 +196,26 @@
       }
     });
 
+  var $btn_remove  = $('#remove');
+  $btn_remove.on( 'click', function() {
+      if ($back_2.hasClass( open_page_2 ) ) {
+        $back_2.removeClass( open_page_2 );
+        $content_2.removeClass( open_page_2 );
+        $btn_works_1.removeClass( open_page_2 );
+        $btn_works_2.removeClass( open_page_2 );
+        $btn_aboutme_1.removeClass( open_page_2 );
+        $btn_aboutme_2.removeClass( open_page_2 );
+      }
+    });
+
+  $btn_remove.on( 'click', function() {
+      if ( $back.hasClass( open_page ) ) {
+        $back.removeClass( open_page );
+        $content.removeClass( open_page );
+        $btn_aboutme_1.removeClass( open_page );
+        $btn_aboutme_2.removeClass( open_page );
+      }
+    });
 
   } )(jQuery);
 
