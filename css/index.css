@@ -3,7 +3,6 @@
 
 body{
   background-color: rgb(0, 0, 50);
-  
 }
 
 #header{
@@ -17,7 +16,7 @@ body{
 
 .open #header{
   background-color: rgb(0, 0, 30);
-  height: 50%;
+  height: 55%;
   width: 100%;
 }
 
@@ -339,6 +338,7 @@ nav .inner ul li a:hover {
   bottom:5%;
   left:auto;
   right:7vw;
+  transition: all .5s;
 }
 #works_2{
   height:20%;
@@ -347,6 +347,7 @@ nav .inner ul li a:hover {
   bottom:5%;
   left:auto;
   right:7vw;
+  transition: all .5s;
 }
 
 #aboutme_2:hover {
@@ -366,46 +367,86 @@ nav .inner ul li a:hover {
   transition: all .5s;
 }
 
+#aboutme_1.open_page_2{
+  top:80%;
+  transition: all .5s;
+}
+#aboutme_2.open_page_2{
+  top:80%;
+  transition: all .5s;
+}
+
+#works_1.open_page_2{
+  bottom:80%;
+  transition: all .5s;
+}
+#works_2.open_page_2{
+  bottom:80%;
+  transition: all .5s;
+}
+
 @media screen and (min-width:100vh) {
-  .aboutme_1{
+  #aboutme_1{
     height:20%;
-    position: fixed;
-    top:15vh;
+    position: absolute;
+    top:5%;
     left:10vw;
+    transition: all .5s;
   }
-  .aboutme_2{
+  #aboutme_2{
     height:20%;
-    position: fixed;
-    top:15vh;
+    position: absolute;
+    top:5%;
     left:10vw;
+    transition: all .5s;
   }
   
   #works_1{
     height:20%;
-    position: fixed;
-    top:65vh;
+    position: absolute;
+    top:auto;
+    bottom:5%;
     left:auto;
     right:10vw;
+    transition: all .5s;
   }
   #works_2{
     height:20%;
-    position: fixed;
-    top:65vh;
+    position: absolute;
+    top:auto;
+    bottom:5%;
     left:auto;
     right:10vw;
+    transition: all .5s;
   }
 
-  #aboutme_2:hover {
-    height:22%;
-    top:14vh;
-    left: calc(10vw - 1vh);
+  #aboutme_1.open_page{
+    top:30%;
+    transition: all .5s;
+  }
+  #aboutme_2.open_page{
+    top:30%;
+    transition: all .5s;
   }
 
-  #works_2:hover {
-    height:22%;
-    top:64vh;
-    right: calc(10vw - 1vh);
+  #aboutme_1.open_page_2{
+    top:5%;
+    transition: all .5s;
   }
+  #aboutme_2.open_page_2{
+    top:5%;
+    transition: all .5s;
+  }
+  
+  #works_1.open_page_2{
+    bottom:50%;
+    transition: all .5s;
+  }
+  #works_2.open_page_2{
+    bottom:50%;
+    transition: all .5s;
+  }
+
 }
 
 
@@ -469,9 +510,9 @@ nav .inner ul li a:hover {
       100% {transform: rotate(360deg);}
     }
 
-/*
+/*-------------------------------------------------------------------
 main page
-*/
+--------------------------------------------------------------------*/
 #main{
   overflow: hidden;
 
@@ -514,11 +555,135 @@ main page
   right:5%;
 }
 
-/*
-#aboutme_content.open_page{
-  left:5%;
+
+#main_2{
+  overflow: hidden;
+  background-color: honeydew;
 }
-*/
+
+#works_back{
+  position: fixed;
+  top: 28%;
+  left:100vw;
+  height:72%;
+  width: 100vw;
+  background-color: rgba(0,0,30,0.8);
+  transition: all .5s;
+  overflow-x: hidden;
+}
+
+#works_back.open_page_2{
+  left:0;
+  background-color: rgba(0,0,30,0.8);
+}
+
+
+#works_back {
+  overflow-y: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+#works_back::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
+#works_content{
+  position: relative;
+  height:180vh;
+  width: 90%;
+  top:5%;
+  left:5%;
+  right:5%;
+}
+
+@media screen and (min-width:100vh) {
+  /*
+  main page
+  */
+  #main{
+    overflow: hidden;
+  }
+  
+  #aboutme_back{
+    position: fixed;
+    left:0;
+    margin-left:28%;
+    top:100vh;
+    height:100%;
+    width: 72%;
+    background-color: rgba(0,0,30,0.8);
+    transition: all .5s;
+    overflow-x: hidden;
+  }
+
+  #aboutme_back.open_page{
+    top:0;
+    background-color: rgba(0,0,30,0.8);
+  }
+
+
+  #aboutme_back {
+    overflow-y: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+  }
+  #aboutme_back::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    display:none;
+  }
+
+  #aboutme_content{
+    position: relative;
+    height:100vh;
+    width: 90%;
+    top:5%;
+    left:5%;
+    right:5%;
+  }
+
+  #main_2{
+    overflow: hidden;
+  }
+
+  #works_back{
+    position: fixed;
+    margin-left:0%;
+    top:-100vh;
+    left:0;
+    height:100%;
+    width: 72%;
+    background-color: rgba(0,0,30,0.8);
+    transition: all .5s;
+    overflow-x: hidden;
+  }
+
+  #works_back.open_page_2{
+    top:0;
+    background-color: rgba(0,0,30,0.8);
+  }
+
+  #works_back {
+    overflow-y: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+  }
+  #works_back::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    display:none;
+  }
+
+  #works_content{
+    position: relative;
+    height:180vh;
+    width: 90%;
+    top:5%;
+    left:5%;
+    right:5%;
+  }
+}
+
+
+/*----------------------------------------------
+contens
+--------------------------------------------------*/
 
 .name{
   color: rgba(225,225,225,1);
@@ -541,4 +706,32 @@ main page
   left: 15%;
   right:auto;
   width: 70%;
+}
+
+
+
+@media screen and (min-width:100vh) {
+.name{
+  color: rgba(225,225,225,1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: inherit;
+
+  font-size: 4vh;
+  line-height: 10vh;
+}
+.text{
+  color: rgba(225,225,225,1);
+  font-family: Arial, Helvetica, sans-serif;
+  
+  font-size: 2.8vh;
+  line-height: 3.2vh;
+}
+
+#me{
+  position: relative;
+  left: 15%;
+  right:auto;
+  width: 70%;
+}
+
 }

@@ -56,10 +56,20 @@
           合気道　(Aikido　(martial arts))</br>
           スノーボード　(Snow board)</br>
         </p>
+        <p class="text">&nbsp;</p>
 
         
       </div>
+    </div>
+  </div>
 
+  <div id="main_2">
+    <div id="works_back">
+      <div id="works_content">
+        <h1 class="name">2012-2017</h1>  
+        <h1 class="name">2018</h1>    
+        <h1 class="name">2019</h1>            
+      </div>
     </div>
   </div>
 
@@ -72,9 +82,10 @@
                 <ul>
                   <li class="inner_main"><a href="#">About me</a></li>
                   <li class="inner_main"><a href="#">Works</a></li>
-                  <li class="inner_sub"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Healthcare & medicine</a></li>
-                  <li class="inner_sub"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Technology</a></li>
-                  <li class="inner_sub"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Glocal</a></li>
+                  <li class="inner_main"><a href="#">Contact</a></li>
+                  <li class="inner_sub"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a></li>
+                  <li class="inner_sub"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;G-mail</a></li>
+                  <li class="inner_sub"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a></li>
                 </ul>
               </div>
             </nav>
@@ -114,6 +125,15 @@
   var hSize = $(window).height();
     $('#main').height(hSize); // アドレスバーを除いたサイズを付与
   });
+
+  $(document).ready(function(){
+  var hSize = $(window).height();
+    $('#main_2').height(hSize); // アドレスバーを除いたサイズを付与
+  });
+  $(window).resize(function(){ // ページをリサイズした時の処理
+  var hSize = $(window).height();
+    $('#main_2').height(hSize); // アドレスバーを除いたサイズを付与
+  });
   
   (function($) {
     var $nav   = $('#header-box');
@@ -147,6 +167,31 @@
         $content.removeClass( open_page );
         $btn_aboutme_1.removeClass( open_page );
         $btn_aboutme_2.removeClass( open_page );
+      }
+    });
+
+    // menu open close
+    var $back_2   = $('#works_back');
+    var $content_2   = $('#works_content');
+    var $btn_works_1   = $('#works_1');
+    var $btn_works_2   = $('#works_2');
+    var open_page_2   = 'open_page_2'; // class
+
+    $btn_works_2.on( 'click', function() {
+      if ( ! $back_2.hasClass( open_page_2 ) ) {
+        $back_2.addClass( open_page_2 );
+        $content_2.addClass( open_page_2 );
+        $btn_works_1.addClass( open_page_2 );
+        $btn_works_2.addClass( open_page_2 );
+        $btn_aboutme_1.addClass( open_page_2 );
+        $btn_aboutme_2.addClass( open_page_2 );
+      } else {
+        $back_2.removeClass( open_page_2 );
+        $content_2.removeClass( open_page_2 );
+        $btn_works_1.removeClass( open_page_2 );
+        $btn_works_2.removeClass( open_page_2 );
+        $btn_aboutme_1.removeClass( open_page_2 );
+        $btn_aboutme_2.removeClass( open_page_2 );
       }
     });
 
