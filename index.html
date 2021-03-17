@@ -87,9 +87,10 @@
                 <div class="timeline-title">ヘルスケアデバイス開発</div>
                 <div class="timeline-text">
                     心臓突然死対策ウェアラブルデバイスの初期開発を企業協力のもとで行い、アイデアコンテスト（中高生）で優勝をいただきました。
-
                 </div> 
-              </div>
+                <img class="timeline-img" src="img/timeline_1.png">
+                <div class="timeline-arrow" id="arrow_1"></div>
+              </div><!--TIMELINE-CONTENT--> 
             </div><!--TIMELINE-BORDER-->  
 
             
@@ -98,13 +99,13 @@
               <div class="circle_2" id=circle2_2></div>
               <div class="timeline-year">2018</div>
               <div class="timeline-content" id="timeline_2">  
-                <div class="timeline-title">TITLE</div>
+                <div class="timeline-title">inochi学生puroject 　core member</div>
                 <div class="timeline-text">
-                  TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.
-                  TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.
-                  TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.
+                    inochi学生プロジェクトコアメンバーに就任し、自動診断アルゴリズムの作成・タイでの現地調査などに携わる傍ら（"Susanosプロジェクト"）、中高大学生がテクノロジーを学ぶ教育プログラム"TECHDAY"などを統括いたしました。
                 </div> 
-              </div>
+                <img class="timeline-img" src="img/timeline_2.png">
+                <div class="timeline-arrow" id="arrow_2"></div>
+              </div><!--TIMELINE-CONTENT--> 
             </div><!--TIMELINE-BORDER-->  
           
           
@@ -278,28 +279,34 @@
   var $border_1  = $('#timeline-border_1');
   var $timeline_1   = $('#timeline_1');
   var $circle2_1   = $('#circle2_1');
+  var $arrow_1   = $('#arrow_1');
   var expand   = 'expand';
   $border_1.on( 'click', function() {
     if (! $timeline_1.hasClass( expand ) ) {
       $timeline_1.addClass( expand );
       $circle2_1.addClass( expand );
+      $arrow_1.addClass( expand );
     }else {
       $timeline_1.removeClass( expand );
       $circle2_1.removeClass( expand );
+      $arrow_1.removeClass( expand );
     }
   });
 
   var $border_2  = $('#timeline-border_2');
   var $timeline_2   = $('#timeline_2');
   var $circle2_2   = $('#circle2_2');
+  var $arrow_2   = $('#arrow_2');
   var expand   = 'expand';
   $border_2.on( 'click', function() {
     if (! $timeline_2.hasClass( expand ) ) {
       $timeline_2.addClass( expand );
       $circle2_2.addClass( expand );
+      $arrow_2.addClass( expand );
     }else {
       $timeline_2.removeClass( expand );
       $circle2_2.removeClass( expand );
+      $arrow_2.removeClass( expand );
     }
   });
 

@@ -822,13 +822,27 @@ contens
 .timeline-title{
   color: rgba(225,225,225,1);
   font-size: 2.5vh;
-  line-height: 7vh;
+  line-height: 5vh;
 }
 .timeline-text{
   color: rgba(225,225,225,1);
   font-size: 1.8vh;
   line-height: 3vh;
 }
+
+.timeline-img{
+  width:50%;
+}
+.timeline-arrow{
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  border: 1vw solid;
+  border-color:  transparent transparent white white;
+  bottom:2vh;
+  left:48.5%;
+}
+
 
 #timeline_1{
   height:15vh;
@@ -840,9 +854,19 @@ contens
 }
 #circle2_1{
   background: rgba(0,0,50,1);
+  transition: all .5s;
 }
 #circle2_1.expand{
   background: rgba(255,0,0,1);
+  transition: all .5s;
+}
+#arrow_1{
+  transform: rotate(-45deg);
+  transition: all .5s;
+}
+#arrow_1.expand{
+  transform: rotate(135deg);
+  transition: all .5s;
 }
 
 
@@ -856,7 +880,17 @@ contens
 }
 #circle2_2{
   background: rgba(0,0,50,1);
+  transition: all .5s;
 }
 #circle2_2.expand{
   background: rgba(255,0,0,1);
+  transition: all .5s;
+}
+#arrow_2{
+  transform: rotate(-45deg);
+  transition: all .5s;
+}
+#arrow_2.expand{
+  transform: rotate(135deg);
+  transition: all .5s;
 }
