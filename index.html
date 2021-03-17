@@ -223,7 +223,10 @@
                     <p class="sp-layer sp-black sp-padding"
                     data-position="bottomCenter" data-height="100px"
                     data-width="100%" data-show-transition="up" data-hide-transition="down">
-                    [3ページ目]テキストテキストテキストテキスト
+                    ヘルスケアデバイス　プロトタイプ</br></br>
+                    <span class="img-text">
+                      心臓突然死予防デバイスの初期開発。中高生の部で優勝、国内/海外の大学生を含めたフォーラムで２位。
+                    </span>
                     </p>
                   </div>
                   <div class="sp-slide">
@@ -231,7 +234,10 @@
                     <p class="sp-layer sp-black sp-padding"
                     data-position="bottomCenter" data-height="100px"
                     data-width="100%" data-show-transition="up" data-hide-transition="down">
-                    [4ページ目]テキストテキストテキストテキスト
+                    TEPIAチャレンジ助成事業</br></br>
+                    <span class="img-text">
+                      TEPIA先端技術館や産業技術総合研究所にて成果発表を行いました。
+                    </span>
                     </p>
                   </div>
                   <div class="sp-slide">
@@ -239,7 +245,10 @@
                     <p class="sp-layer sp-black sp-padding"
                     data-position="bottomCenter" data-height="120px"
                     data-width="100%" data-show-transition="up" data-hide-transition="down">
-                    [5ページ目]テキストテキストテキストテキスト
+                    LINE bot -旅行者下痢症-
+                    <span class="img-text">
+                      旅行者の下痢の際に問診、診断、処方箋出力、薬局検索を自動で行う。AngelhackOsaka2018 最優秀賞/LINE賞/bloomy賞。
+                    </span>
                     </p>
                   </div>
                   <div class="sp-slide">
@@ -387,8 +396,8 @@
             <nav>
               <div class="inner">
                 <ul>
-                  <li class="inner_main"><a href="#">ABOUT ME</a></li>
-                  <li class="inner_main"><a href="#">WORKS</a></li>
+                  <li class="inner_main" id="ABOUTME"><a href="#">ABOUT ME</a></li>
+                  <li class="inner_main" id="WORKS"><a href="#">WORKS</a></li>
                 </ul>
               </div>
             </nav>
@@ -593,6 +602,42 @@
       $arrow_4.removeClass( expand );
     }
   });
+
+    var $ABOUTME   = $('#ABOUTME');
+    // menu open close
+    $ABOUTME.on( 'click', function() {
+      $back.addClass( open_page );
+      $content.addClass( open_page );
+      $btn_aboutme_1.addClass( open_page );
+      $btn_aboutme_2.addClass( open_page );
+      $nav.removeClass( open );
+
+      $back_2.removeClass( open_page_2 );
+      $content_2.removeClass( open_page_2 );
+      $btn_works_1.removeClass( open_page_2 );
+      $btn_works_2.removeClass( open_page_2 );
+      $btn_aboutme_1.removeClass( open_page_2 );
+      $btn_aboutme_2.removeClass( open_page_2 );
+    });
+
+    var $WORKS   = $('#WORKS');
+    // menu open close
+    $WORKS.on( 'click', function() {
+      $back_2.addClass( open_page_2 );
+      $content_2.addClass( open_page_2 );
+      $btn_works_1.addClass( open_page_2 );
+      $btn_works_2.addClass( open_page_2 );
+      $btn_aboutme_1.addClass( open_page_2 );
+      $btn_aboutme_2.addClass( open_page_2 );
+      $nav.removeClass( open );
+
+      $back.removeClass( open_page );
+      $content.removeClass( open_page );
+      $btn_aboutme_1.removeClass( open_page );
+      $btn_aboutme_2.removeClass( open_page );
+    });
+
+
   } )(jQuery);
 
   $(function(){
