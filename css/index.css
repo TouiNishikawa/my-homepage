@@ -689,7 +689,7 @@ main page
 
   #works_content{
     position: relative;
-    height:180vh;
+    height:1000vh; /* works 領域　高さ*/
     width: 90%;
     top:5%;
     left:5%;
@@ -954,3 +954,36 @@ contens
 }
 
 /*-----------------------------------TECH----------------------------------*/
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:before,
+.sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:before {
+  border-color: #c7c7c7;
+}
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
+  border-bottom: 13px solid #c7c7c7;
+}
+.sp-slide p{font-size:18px !important;}
+i
+.sp-previous-arrow:before, .sp-previous-arrow:after, .sp-next-arrow:before, .sp-next-arrow:after {background-color: #6d6666;}
+
+.img-slider-pro{
+  max-width: 600px !important;
+  margin: 0 auto !important;
+}
+
+#slider-area_1 .thumbnail-div{
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  border: solid 1px #bbbbbb;
+}
+
+#slider-area_2 .thumbnail-div{
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  border: solid 1px #bbbbbb;
+}
+
+img{max-width:100%;}
+
+
