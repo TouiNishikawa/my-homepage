@@ -839,6 +839,9 @@ contens
 .timeline-img{
   height:15vh;
 }
+.timeline-img_4{
+  height:14vh;
+}
 .timeline-arrow{
   position: absolute;
   width: 2vw;
