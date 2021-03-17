@@ -977,8 +977,11 @@ i
   border: solid 1px #bbbbbb;
 }
 
-
 img{max-width:100%;}
+
+.img-text{
+  font-size:10px
+}
 
 /*-----------------------------------Glocal----------------------------------*/
 
