@@ -73,31 +73,47 @@
   <div id="main_2">
     <div id="works_back">
       <div id="works_content">
+
         <div id="medical">
-          <h2 class="title">1. Medical & Health care</h1>
-            <p class="text">&nbsp;</p>
-            <p class="text">
-                2016年（高校生時)
-                </br>
-                心臓突然死対策ウェアラブルデバイスの初期開発を企業協力のもとで行い、アイデアコンテスト（中高生）で優勝をいただきました。
-                </br></br>
-                2018年
-                inochi学生プロジェクトコアメンバーに就任し、自動診断アルゴリズムの作成・タイでの現地調査などに携わる傍ら（"Susanosプロジェクト"）、中高大学生がテクノロジーを学ぶ教育プログラム"TECHDAY"などを統括いたしました。
-                </br></br>
-                2019年
-                </br>
-                簡易式グラム染色自動化装置の開発とAIによる菌種同定アプリ制作のプロジェクト"GramEye"で活動しました。
-                〈Gram Eye実績〉
-                2019 HackU 優秀賞
-                Healthcare Venture KNOT2019スーパーノヴァ部門　最優秀賞
-                慶応義塾大学健康医療ベンチャー大賞　学生部門優勝、sony startup acceleration program賞、LINK-J慶應義塾大学賞
-                大阪テックプラングランプリ　ロート賞、パイオニア・コーポレーション賞
-              </br></br>
-                2020年
-              </br>
-                現在、和歌山県立医科大学人体病理学教室で病理AIの研究をしています。
-            </p>
-            <h2 class="title">&nbsp;</h1>
+          <h2 class="title">1. Medical & Health care</h2>
+          <h2 class="title">&nbsp;</h1>
+          <div id ="timeline">
+
+            <div class="timeline-border" id="timeline-border_1">
+            <div class="circle_1"></div>
+            <div class="circle_2" id=circle2_1></div>
+              <div class="timeline-year">2016</div>
+              <div class="timeline-content" id="timeline_1">
+                <div class="timeline-title">ヘルスケアデバイス開発</div>
+                <div class="timeline-text">
+                    心臓突然死対策ウェアラブルデバイスの初期開発を企業協力のもとで行い、アイデアコンテスト（中高生）で優勝をいただきました。
+
+                </div> 
+              </div>
+            </div><!--TIMELINE-BORDER-->  
+
+            
+            <div class="timeline-border" id="timeline-border_2">
+              <div class="circle_1"></div>
+              <div class="circle_2" id=circle2_2></div>
+              <div class="timeline-year">2018</div>
+              <div class="timeline-content" id="timeline_2">  
+                <div class="timeline-title">TITLE</div>
+                <div class="timeline-text">
+                  TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.
+                  TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.
+                  TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.TEXT. TEXT. TEXT.
+                </div> 
+              </div>
+            </div><!--TIMELINE-BORDER-->  
+          
+          
+          
+          </div><!--TIMELINE-->
+        </div><!--MEDICAL-->
+        
+            
+        <h2 class="title">&nbsp;</h1>
 
         <div id="technology">
           <h2 class="title">2. Technology</h1>
@@ -109,16 +125,16 @@
         </div>
 
         <div id="glocal">
-            <h2 class="title">3. Glocal</h1>
-              <p class="text">&nbsp;</p>
-              <p class="text">
-                    ---
-              </p>
-          </div>
+          <h2 class="title">3. Glocal</h1>
+          <p class="text">&nbsp;</p>
+          <p class="text">
+          ---
+          </p>
+        </div>
                    
-      </div>
-    </div>
-  </div>
+      </div><!--WORKS_CONTENT-->
+    </div><!--WORKS_BACK-->
+  </div><!--MAIN2-->
 
   
   <div id="header-box">
@@ -240,7 +256,7 @@
 
   var $btn_remove  = $('#remove');
   $btn_remove.on( 'click', function() {
-      if ($back_2.hasClass( open_page_2 ) ) {
+      if (! $back_2.hasClass( open_page_2 ) ) {
         $back_2.removeClass( open_page_2 );
         $content_2.removeClass( open_page_2 );
         $btn_works_1.removeClass( open_page_2 );
@@ -258,6 +274,34 @@
         $btn_aboutme_2.removeClass( open_page );
       }
     });
+
+  var $border_1  = $('#timeline-border_1');
+  var $timeline_1   = $('#timeline_1');
+  var $circle2_1   = $('#circle2_1');
+  var expand   = 'expand';
+  $border_1.on( 'click', function() {
+    if (! $timeline_1.hasClass( expand ) ) {
+      $timeline_1.addClass( expand );
+      $circle2_1.addClass( expand );
+    }else {
+      $timeline_1.removeClass( expand );
+      $circle2_1.removeClass( expand );
+    }
+  });
+
+  var $border_2  = $('#timeline-border_2');
+  var $timeline_2   = $('#timeline_2');
+  var $circle2_2   = $('#circle2_2');
+  var expand   = 'expand';
+  $border_2.on( 'click', function() {
+    if (! $timeline_2.hasClass( expand ) ) {
+      $timeline_2.addClass( expand );
+      $circle2_2.addClass( expand );
+    }else {
+      $timeline_2.removeClass( expand );
+      $circle2_2.removeClass( expand );
+    }
+  });
 
   } )(jQuery);
   </script>

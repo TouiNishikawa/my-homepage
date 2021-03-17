@@ -746,6 +746,17 @@ contens
   font-size: 4vh;
   line-height: 10vh;
 }
+
+.title{
+  color: rgba(225,225,225,1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: inherit;
+
+  font-size: 3.5vh;
+  line-height: 5vh;
+}
+
+
 .text{
   color: rgba(225,225,225,1);
   font-family: Arial, Helvetica, sans-serif;
@@ -761,4 +772,91 @@ contens
   width: 70%;
 }
 
+}
+
+/*------------------------------------WORKS-----------------------------------*/
+.timeline{
+  width: 100%;
+}
+
+.timeline-border{
+  position: relative;
+  border-left: solid 1vw rgba(225,225,225,1);
+  width: 90%;
+  margin-left:5%;
+}
+
+.circle_1{
+  position: absolute;
+  margin-top: 1.5vh;
+  margin-left: calc(-1.5vh - 0.5vw);
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  background: rgba(225,225,225,1);
+}
+.circle_2{
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: calc(-1vh - 0.5vw);
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+}
+
+.timeline-year{
+  color: rgba(225,225,225,1);
+  margin-left:5%;
+  width: 90%;
+  font-size: 2vh;
+  line-height: 6vh;
+}
+
+.timeline-content{
+  margin-left:5%;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.timeline-title{
+  color: rgba(225,225,225,1);
+  font-size: 2.5vh;
+  line-height: 7vh;
+}
+.timeline-text{
+  color: rgba(225,225,225,1);
+  font-size: 1.8vh;
+  line-height: 3vh;
+}
+
+#timeline_1{
+  height:15vh;
+  transition: all .5s;
+}
+#timeline_1.expand{
+  height: 40vh;
+  transition: all .5s;
+}
+#circle2_1{
+  background: rgba(0,0,50,1);
+}
+#circle2_1.expand{
+  background: rgba(255,0,0,1);
+}
+
+
+#timeline_2{
+  height:15vh;
+  transition: all .5s;
+}
+#timeline_2.expand{
+  height: 40vh;
+  transition: all .5s;
+}
+#circle2_2{
+  background: rgba(0,0,50,1);
+}
+#circle2_2.expand{
+  background: rgba(255,0,0,1);
 }
