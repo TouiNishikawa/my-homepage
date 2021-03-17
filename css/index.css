@@ -689,7 +689,7 @@ main page
 
   #works_content{
     position: relative;
-    height:1000vh; /* works 領域　高さ*/
+    height:180vh; /* works 領域　高さ*/
     width: 90%;
     top:5%;
     left:5%;
@@ -977,13 +977,15 @@ i
   border: solid 1px #bbbbbb;
 }
 
+
+img{max-width:100%;}
+
+/*-----------------------------------Glocal----------------------------------*/
+
 #slider-area_2 .thumbnail-div{
   width: 100%;
   height: 80%;
   text-align: center;
   border: solid 1px #bbbbbb;
 }
-
-img{max-width:100%;}
-
 
