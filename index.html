@@ -548,7 +548,7 @@
 
   var $btn_remove  = $('#remove');
   $btn_remove.on( 'click', function() {
-      if (! $back_2.hasClass( open_page_2 ) ) {
+      if ($back_2.hasClass( open_page_2 ) ) {
         $back_2.removeClass( open_page_2 );
         $content_2.removeClass( open_page_2 );
         $btn_works_1.removeClass( open_page_2 );
