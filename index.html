@@ -10,6 +10,8 @@
   <link rel="stylesheet"  href="https://blog.appsol-one.com/custom/sliderPro/slider-pro.css" type="text/css" >
   <link rel="icon" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  
+  
 </head>
 
 <body>
@@ -38,17 +40,17 @@
   <div id="main">
     <div id="aboutme_back">
       <div id="aboutme_content">
-        <h1 class="name">西川 登偉 / Toui Nishikawa</h1>
+        <h1 class="name sliderin">西川 登偉 / Toui Nishikawa</h1>
         <h2 class="title">Medical student / Engineer</p>
         <p class="text">&nbsp;</p>
         <p class="text"> 1999年大阪生まれ。中高生時代、ロボット製作を行い大会やアイデアコンテストで多数入賞を果たす。2018年和歌山県立医科大学に入学。inochi学生プロジェクトに所属し、coreメンバー、Susanosプロジェクトメンバー、inochi学生フォーラムメンターなどを務める。Gram Eyeプロジェクトではハードエンジニアとして活動。WAKA×YAMA、予防医学サークルなどの和歌山における地域・医療活動も行った。現在は病理AIの研究を行っている。</p>
         <p class="text">&nbsp;</p>
         <p class="text">I was born in Osaka in 1999. When I was a junior high school and high school student, I build robots and won many competitions and idea contests. In 2018, I entered the Wakayama Medical University. I belonged to "inochi Gakusei project" and worked as core member, "Susanos puroject" member and mentor of "inochi gakusei forum". I also worked as engineer of "Gram eye" project. In Wakayama, I was involved in the founding of "WAKA×YAMA" and worked in "preventive medicine circle". Now, I'm working for the application of deep learning to pathology.</p>
         <p class="text">&nbsp;</p>
-        <img id="me" src="img/me.jpg">
+        <img class="sliderin"id="me" src="img/me.jpg">
         <h2 class="title">&nbsp;</h1>
         <h2 class="title">スキル / Skills</h1>
-        <p class="text">
+        <p class="text sliderin">
           AI engineering </br>
           Web engineering </br>
           Android engineering </br>
@@ -324,7 +326,7 @@
           <p class="text">
               和歌山初の医療系学生団体、"WAKA×YAMA"の創立に携わりました。2018年度の"WAKA×YAMA"では「若(WAKA)者のアイデアで病(YAMA)いをなくす」という理念のもと、発達障害の二次障害に関するプロジェクトを行いました（日本育療学会にてポスター発表）。他にも、予防医学サークルにおける和歌山の僻地における検診、中高生が行う三段壁における自殺対策のプロジェクトのメンターや、G1カレッジ和歌山の運営などを務め、地域の課題に向き合いました。
               </br>
-              一方、世界的に重視されている薬剤耐性菌や自殺率の課題については、タイや韓国といった海外への現地調査を行い、日本での活動に活かしました。
+              一方、世界的に重視されている薬剤耐性菌や自殺率の課題については、タイや韓国といった海外への現地調査を行い、日本での活動に活かしました。米国医学研究会にも所属し、広い視野で活動が行えるよう心がけています。
           </p>
         </div>
 
@@ -448,8 +450,6 @@
   
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://blog.appsol-one.com/custom/sliderPro/jquery.sliderPro.min.js" type="text/javascript" defer=""></script>
-  
-  
   
   <script type="text/javascript">
   // スマートフォンで全画面表示
@@ -663,8 +663,6 @@
       $btn_aboutme_1.removeClass( open_page );
       $btn_aboutme_2.removeClass( open_page );
     });
-
-
   } )(jQuery);
 
   $(function(){
@@ -676,7 +674,7 @@
     waitForLayers: true,//キャプションのアニメーションが終了してからスライドするか
     autoplay:false,//自動再生
     thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
-    thumbnailWidth: 180,//サムネイルの横幅
+    thumbnailWidth: 120,//サムネイルの横幅
     thumbnailHeight: 120,//サムネイルの縦幅
     arrows: true,//左右の矢印
     slideDistance:0,//スライド同士の距離
@@ -697,7 +695,7 @@
     waitForLayers: true,//キャプションのアニメーションが終了してからスライドするか
     autoplay:false,//自動再生
     thumbnailPointer: true,//アクティブなサムネイルにマークを付ける
-    thumbnailWidth: 180,//サムネイルの横幅
+    thumbnailWidth: 120,//サムネイルの横幅
     thumbnailHeight: 100,//サムネイルの縦幅
     arrows: true,//左右の矢印
     slideDistance:0,//スライド同士の距離
@@ -708,5 +706,9 @@
     }
     });
   });
+
+  
   </script>
+  
+  
 </body>
