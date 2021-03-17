@@ -784,6 +784,7 @@ contens
   border-left: solid 1vw rgba(225,225,225,1);
   width: 90%;
   margin-left:5%;
+  padding-bottom: 6vh;
 }
 
 .circle_1{
@@ -824,6 +825,7 @@ contens
   font-size: 2.5vh;
   line-height: 5vh;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
 }
 .timeline-text{
   color: rgba(225,225,225,1);
@@ -841,11 +843,11 @@ contens
   height: 2vw;
   border: 1vw solid;
   border-color:  transparent transparent white white;
-  bottom:2vh;
+  bottom:3vh;
   left:48.5%;
 }
 
-
+/* 1 */
 #timeline_1{
   height:15vh;
   transition: all .5s;
@@ -871,7 +873,7 @@ contens
   transition: all .5s;
 }
 
-
+/* 2 */
 #timeline_2{
   height:15vh;
   transition: all .5s;
@@ -896,3 +898,56 @@ contens
   transform: rotate(135deg);
   transition: all .5s;
 }
+
+/* 3 */
+#timeline_3{
+  height:15vh;
+  transition: all .5s;
+}
+#timeline_3.expand{
+  height: 40vh;
+  transition: all .5s;
+}
+#circle2_3{
+  background: rgba(0,0,50,1);
+  transition: all .5s;
+}
+#circle2_3.expand{
+  background: rgba(255,0,0,1);
+  transition: all .5s;
+}
+#arrow_3{
+  transform: rotate(-45deg);
+  transition: all .5s;
+}
+#arrow_3.expand{
+  transform: rotate(135deg);
+  transition: all .5s;
+}
+
+/* 4 */
+#timeline_4{
+  height:15vh;
+  transition: all .5s;
+}
+#timeline_4.expand{
+  height: 40vh;
+  transition: all .5s;
+}
+#circle2_4{
+  background: rgba(0,0,50,1);
+  transition: all .5s;
+}
+#circle2_4.expand{
+  background: rgba(255,0,0,1);
+  transition: all .5s;
+}
+#arrow_4{
+  transform: rotate(-45deg);
+  transition: all .5s;
+}
+#arrow_4.expand{
+  transform: rotate(135deg);
+  transition: all .5s;
+}
+
