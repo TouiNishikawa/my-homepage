@@ -605,7 +605,7 @@ main page
 
 #works_content{
   position: relative;
-  height:180vh;
+  height:250vh;
   width: 90%;
   top:5%;
   left:5%;
@@ -775,6 +775,7 @@ contens
 }
 
 /*------------------------------------WORKS-----------------------------------*/
+/*-----------------------------------MEDICAL----------------------------------*/
 .timeline{
   width: 100%;
 }
@@ -784,7 +785,7 @@ contens
   border-left: solid 1vw rgba(225,225,225,1);
   width: 90%;
   margin-left:5%;
-  padding-bottom: 6vh;
+  padding-bottom: 3vh;
 }
 
 .circle_1{
@@ -850,7 +851,7 @@ contens
 
 /* 1 */
 #timeline_1{
-  height:15vh;
+  height:10vh;
   transition: all .5s;
 }
 #timeline_1.expand{
@@ -876,7 +877,7 @@ contens
 
 /* 2 */
 #timeline_2{
-  height:15vh;
+  height:10vh;
   transition: all .5s;
 }
 #timeline_2.expand{
@@ -902,7 +903,7 @@ contens
 
 /* 3 */
 #timeline_3{
-  height:15vh;
+  height:10vh;
   transition: all .5s;
 }
 #timeline_3.expand{
@@ -928,7 +929,7 @@ contens
 
 /* 4 */
 #timeline_4{
-  height:15vh;
+  height:10vh;
   transition: all .5s;
 }
 #timeline_4.expand{
@@ -952,3 +953,4 @@ contens
   transition: all .5s;
 }
 
+/*-----------------------------------TECH----------------------------------*/
