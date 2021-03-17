@@ -881,7 +881,7 @@ contens
   transition: all .5s;
 }
 #timeline_2.expand{
-  height: 40vh;
+  height: 50vh;
   transition: all .5s;
 }
 #circle2_2{
@@ -907,7 +907,7 @@ contens
   transition: all .5s;
 }
 #timeline_3.expand{
-  height: 60vh;
+  height: 65vh;
   transition: all .5s;
 }
 #circle2_3{
@@ -933,7 +933,7 @@ contens
   transition: all .5s;
 }
 #timeline_4.expand{
-  height: 40vh;
+  height: 50vh;
   transition: all .5s;
 }
 #circle2_4{
