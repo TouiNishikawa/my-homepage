@@ -19,6 +19,7 @@ body{
   background-color: rgb(0, 0, 30);
   height: 10%;
   width: 100%;
+  min-width : 80px;
   transition: all .5s;
 }
 
@@ -744,7 +745,7 @@ contens
   font-family: Arial, Helvetica, sans-serif;
   font-weight: inherit;
 
-  font-size: 4vh;
+  font-size: 5vh;
   line-height: 10vh;
 }
 
@@ -753,7 +754,7 @@ contens
   font-family: Arial, Helvetica, sans-serif;
   font-weight: inherit;
 
-  font-size: 3.5vh;
+  font-size: 4vh;
   line-height: 5vh;
 }
 
@@ -788,11 +789,16 @@ contens
   margin-left:5%;
   padding-bottom: 3vh;
 }
+@media screen and (min-width:100vh) {
+  .timeline-border{
+    border-left: solid 1vh rgba(225,225,225,1);
+  }
+}
 
 .circle_1{
   position: absolute;
   margin-top: 1.5vh;
-  margin-left: calc(-1.5vh - 0.5vw);
+  margin-left: calc(-1.5vh - 0.5vh);
   width: 3vh;
   height: 3vh;
   border-radius: 50%;
@@ -801,7 +807,7 @@ contens
 .circle_2{
   position: absolute;
   margin-top: 2vh;
-  margin-left: calc(-1vh - 0.5vw);
+  margin-left: calc(-1vh - 0.5vh);
   width: 2vh;
   height: 2vh;
   border-radius: 50%;
@@ -843,6 +849,16 @@ contens
 .timeline-img_4{
   height:13vh;
 }
+
+@media screen and (min-width:100vh) {
+  .timeline-img{
+    height:20vh;
+  }
+  .timeline-img_4{
+    height:20vh;
+  }
+}
+
 .timeline-arrow{
   position: absolute;
   width: 2vw;
@@ -852,6 +868,18 @@ contens
   bottom:3vh;
   left:48.5%;
 }
+
+@media screen and (min-width:100vh) {
+  .timeline-arrow{
+    width: 1vw;
+    height: 1vw;
+    border: 1vh solid;
+    border-color:  transparent transparent white white;
+    bottom:3vh;
+    left:48.5%;
+  }
+}
+
 
 /* 1 */
 #timeline_1{
@@ -956,6 +984,8 @@ contens
   transform: rotate(135deg);
   transition: all .5s;
 }
+
+
 
 /*-----------------------------------TECH----------------------------------*/
 .sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:before,
