@@ -65,7 +65,7 @@ nav
 =============*/
 nav {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -100%;
   bottom: 0;
@@ -136,7 +136,7 @@ nav .inner ul li a:hover {
 .toggle_btn {
   display: block;
   position: fixed;
-  top: 3.5vh;
+  margin-top: 3.5vh;
   right: 4vh;
   width: 4vh;
   height: 4vh;
