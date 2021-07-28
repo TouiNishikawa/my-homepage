@@ -776,6 +776,32 @@ contens
 
 }
 
+/*------------------------------------SKILLS-----------------------------------*/
+.skill_icon{
+  position: relative;
+  left: 35%;
+  right:auto;
+  width: 30%;
+}
+
+.skill_title{
+  text-align: center;
+  color: rgba(225,225,225,1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: inherit;
+
+  font-size: 4vh;
+  line-height: 6vh;
+}
+
+.skill_text{
+  text-align: center;
+  color: rgba(225,225,225,1);
+  font-family: Arial, Helvetica, sans-serif;
+  
+  font-size: 1.8vh;
+  line-height: 2.7vh;
+}
 /*------------------------------------WORKS-----------------------------------*/
 /*-----------------------------------MEDICAL----------------------------------*/
 .timeline{
