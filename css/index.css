@@ -2,7 +2,7 @@
 /* https://webkore.site/video-tag/ */
 
 
-/* Loading Block */
+/* Loading Block-------------------------------------------------- */
 #loading {
   width: 100vw;
   height: 100vh;
@@ -37,6 +37,8 @@
   visibility: hidden;
 }
 
+
+/*----------------------------------------------------*/
 
 
 #remove{

@@ -501,6 +501,13 @@
   <script src="https://blog.appsol-one.com/custom/sliderPro/jquery.sliderPro.min.js" type="text/javascript" defer=""></script>
   
   <script type="text/javascript">
+  
+  window.onload = ()=>{
+  const spinner = document.getElementById('loading');
+  // Add .loaded to .loading
+  spinner.classList.add('loaded');
+  }
+
   // スマートフォンで全画面表示
   $(document).ready(function(){
   var hSize = $(window).height();
@@ -516,11 +523,6 @@
     $('#main').height(hSize);
     $('#main_2').height(hSize);
   });
-  window.onload = function() {
-  const spinner = document.getElementById('loading');
-  // Add .loaded to .loading
-  spinner.classList.add('loaded');
-  }
 
   (function($) {
     var $nav   = $('#header-box');
