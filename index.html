@@ -15,6 +15,10 @@
 </head>
 
 <body>
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
 
   <div class="video">
     <video class="video_pc" autoplay loop muted playsinline>
@@ -512,6 +516,11 @@
     $('#main').height(hSize);
     $('#main_2').height(hSize);
   });
+  window.onload = function() {
+  const spinner = document.getElementById('loading');
+  // Add .loaded to .loading
+  spinner.classList.add('loaded');
+  }
 
   (function($) {
     var $nav   = $('#header-box');
