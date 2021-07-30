@@ -15,8 +15,11 @@
 </head>
 
 <body>
+  
+  
   <div id="loading">
-    <div class="spinner"></div>
+    <div class="loader" id="animation">Loading...</div>
+    <!--<div class="spinner"></div>-->
   </div>
 
 
@@ -506,7 +509,11 @@
   const spinner = document.getElementById('loading');
   // Add .loaded to .loading
   spinner.classList.add('loaded');
+  const spinner_2 = document.getElementById('animation');
+  // Add .loaded to .loading
+  spinner_2.classList.add('loaded');
   }
+  
 
   // スマートフォンで全画面表示
   $(document).ready(function(){
