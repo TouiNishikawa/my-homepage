@@ -113,6 +113,10 @@ body{
   overflow: hidden;
 }
 
+#header-box{
+  height: 100vh;
+}
+
 #header{
   top: 0;
   position: fixed;
