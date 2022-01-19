@@ -637,6 +637,7 @@ nav .inner ul li a:hover {
 main page
 --------------------------------------------------------------------*/
 #main{
+  position: fixed;
   height: 100vh;
   min-height: var(--sp_height);
   overflow: hidden;
