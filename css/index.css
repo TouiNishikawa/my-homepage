@@ -632,6 +632,7 @@ nav .inner ul li a:hover {
 main page
 --------------------------------------------------------------------*/
 #main{
+  height: 100vh;
   overflow: hidden;
   z-index: 20;
 }
@@ -675,6 +676,7 @@ main page
 
 
 #main_2{
+  height: 100vh;
   overflow: hidden;
 }
 
