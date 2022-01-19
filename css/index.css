@@ -637,6 +637,7 @@ main page
 --------------------------------------------------------------------*/
 #main{
   height: 100vh;
+  min-height: var(--sp_height);
   overflow: hidden;
   z-index: 20;
 }
@@ -681,6 +682,7 @@ main page
 
 #main_2{
   height: 100vh;
+  min-height: var(--sp_height);
   overflow: hidden;
 }
 
