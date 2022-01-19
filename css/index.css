@@ -21,7 +21,7 @@ body{
 
 
 
-/* video 
+
 .video{
   position: fixed;
   width: 100%;
@@ -46,7 +46,7 @@ body{
   z-index: 0;
 }
 
-
+/* video 
 .video_pc{
   background-color:rgb(0, 0, 50);
   display: none;
