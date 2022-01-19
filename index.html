@@ -541,27 +541,6 @@
     $('#main_2').height(hSize);
   });
   
-  // スクロールを禁止にする関数
-  function disableScroll(event) {
-  event.preventDefault();
-  }
-  // スクロール禁止
-  
-  document.addEventListener('touchmove', disableScroll, { passive: false });
-  document.addEventListener('mousewheel', disableScroll, { passive: false });
-  
-  /*
-  document.getElementById('off').onclick = function() {    
-  // イベントと関数を紐付け  
-  document.removeEventListener('touchmove', disableScroll, { passive: false });
-  document.removeEventListener('mousewheel', disableScroll, { passive: false });
-  }
-  document.getElementById('off').onclick = function() {    
-  // イベントと関数を紐付け  
-  document.removeEventListener('touchmove', disableScroll, { passive: false });
-  document.removeEventListener('mousewheel', disableScroll, { passive: false });
-  }
-  */
 
 
   (function($) {
