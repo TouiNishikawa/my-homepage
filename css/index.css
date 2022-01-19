@@ -683,6 +683,8 @@ main page
 
 
 #main_2{
+  background-color: rgba(100,0,30,0.8);
+  position: fixed;
   height: 100vh;
   min-height: var(--sp_height);
   overflow: hidden;
