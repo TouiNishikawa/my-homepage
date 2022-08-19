@@ -931,7 +931,7 @@ contens
   .skill_box{
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 180vh;
   }
   .skill_box1{
     position: absolute;
@@ -943,13 +943,13 @@ contens
     position: absolute;
     left: 0%;
     top:70vh;
-    height: 40vh;
+    height: 70vh;
     width: 70vw;
   }
   .skill_box3{
     position: absolute;
     left: 0%;
-    top:110vh;
+    top:140vh;
     height: 40vh;
     width: 70vw;
   }
