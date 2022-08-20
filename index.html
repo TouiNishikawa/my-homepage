@@ -156,9 +156,11 @@
         <h2 class="title">趣味 / Hobbies</h1>
         <p class="text">
           合気道　(Aikido　(martial arts))</br>
+          スキューバダイビング</br>
           スノーボード　(Snow board)</br>
           レザークラフト　(Leathercraft)</br>
           フォトマスター検定１級　(Photo-master level 1 (highest))</br>
+          ビール</br>
           手相鑑定士 (Palm reader)</br>
         </p>
         <p class="text">&nbsp;</p>
@@ -182,7 +184,7 @@
               <div class="timeline-year">2016 (高校二年)</div>
               <div class="timeline-content" id="timeline_1">
                 <div class="timeline-title">ヘルスケアデバイス開発</div>
-                <div class="timeline-text">
+                <div class="timeline-text" id="timeline-text_1">
                     #初期開発　#心臓突然死　#アイデアコンテスト
                   </br></br>
                     心臓突然死対策ウェアラブルデバイスの初期開発を企業協力のもとで行い、アイデアコンテスト（中高生）で優勝をいただきました。</br></br>
@@ -199,7 +201,7 @@
               <div class="timeline-year">2018 (大学1年)</div>
               <div class="timeline-content" id="timeline_2">  
                 <div class="timeline-title">inochi Gakusei puroject</div>
-                <div class="timeline-text">
+                <div class="timeline-text" id="timeline-text_2">
                     #団体運営　#教育　#薬剤耐性菌
                   </br></br>
                     inochi学生プロジェクトコアメンバーに就任し、自動診断アルゴリズムの作成・タイでの現地調査などに携わる傍ら（"Susanosプロジェクト"）、中高大学生がテクノロジーを学ぶ教育プログラム"TECHDAY"などを統括いたしました。</br></br>
@@ -216,7 +218,7 @@
                 <div class="timeline-year">2019 (大学2年)</div>
               <div class="timeline-content" id="timeline_3">  
                   <div class="timeline-title">医療機器開発</div>
-                  <div class="timeline-text">
+                  <div class="timeline-text" id="timeline-text_3">
                     #ハードウェア　#ビジネスコンペ　#グラム染色 
                   </br></br>
                     簡易式グラム染色自動化装置の開発とAIによる菌種同定アプリ制作のプロジェクト"GramEye"で活動しました。
@@ -234,7 +236,7 @@
                 <div class="timeline-year">2020 - 2021 (大学3,4年)</div>
                 <div class="timeline-content" id="timeline_4">  
                   <div class="timeline-title">AI×人体病理学</div>
-                  <div class="timeline-text">
+                  <div class="timeline-text" id="timeline-text_4">
                     #AI　#研究　#病理診断
                     </br></br>
                       現在、和歌山県立医科大学人体病理学教室で病理AIの研究をしています。学業成績も認められ、大学全学年から年に１人選出される木下記念事業団奨学生に認定いただきました。</br></br>
@@ -248,6 +250,29 @@
           
           
           </div><!--TIMELINE-->
+
+         <div class="paper"><!--paper-->
+          <h3 class="title">Paper</h2>
+            <table border="1",border-color = "#FFFFFF">
+                <tr>
+                  <th><!--paper1-->
+                    <p class="text">
+                      Nishikawa T, Iwamoto R, Matsuzaki I, F.Y.Musangile, Takahashi A., Mikasa Y, Takahashi Y, Kojima F, Murata S. Pathological image classification of flat urothelial lesions using pathological criteria-based deep learning. Am J Clin Pathol. ***:***-***, 2022
+                      </br>
+                      （大学３年の基礎配属期間に執筆)
+                    </p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text">
+                      現在投稿中論文　2編
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+         </div><!--paper-->
         </div><!--MEDICAL-->
         
         
@@ -649,16 +674,19 @@
   var $timeline_1   = $('#timeline_1');
   var $circle2_1   = $('#circle2_1');
   var $arrow_1   = $('#arrow_1');
-  var expand   = 'expand';
+  var $timeline_text_1  = $('#timeline-text_1');
+  var expand_1   = 'expand';
   $border_1.on( 'click', function() {
     if (! $timeline_1.hasClass( expand ) ) {
       $timeline_1.addClass( expand );
       $circle2_1.addClass( expand );
       $arrow_1.addClass( expand );
+      $timeline_text_1.addClass( expand );
     }else {
       $timeline_1.removeClass( expand );
       $circle2_1.removeClass( expand );
       $arrow_1.removeClass( expand );
+      $timeline_text_1.removeClass( expand );
     }
   });
 
@@ -666,16 +694,19 @@
   var $timeline_2   = $('#timeline_2');
   var $circle2_2   = $('#circle2_2');
   var $arrow_2   = $('#arrow_2');
+  var $timeline_text_2  = $('#timeline-text_2');
   var expand   = 'expand';
   $border_2.on( 'click', function() {
     if (! $timeline_2.hasClass( expand ) ) {
       $timeline_2.addClass( expand );
       $circle2_2.addClass( expand );
       $arrow_2.addClass( expand );
+      $timeline_text_2.addClass( expand );
     }else {
       $timeline_2.removeClass( expand );
       $circle2_2.removeClass( expand );
       $arrow_2.removeClass( expand );
+      $timeline_text_2.removeClass( expand );
     }
   });
 
@@ -683,16 +714,19 @@
   var $timeline_3   = $('#timeline_3');
   var $circle2_3   = $('#circle2_3');
   var $arrow_3   = $('#arrow_3');
+  var $timeline_text_3  = $('#timeline-text_3');
   var expand   = 'expand';
   $border_3.on( 'click', function() {
     if (! $timeline_3.hasClass( expand ) ) {
       $timeline_3.addClass( expand );
       $circle2_3.addClass( expand );
       $arrow_3.addClass( expand );
+      $timeline_text_3.addClass( expand );
     }else {
       $timeline_3.removeClass( expand );
       $circle2_3.removeClass( expand );
       $arrow_3.removeClass( expand );
+      $timeline_text_3.removeClass( expand );
     }
   });
 
@@ -700,16 +734,19 @@
   var $timeline_4   = $('#timeline_4');
   var $circle2_4   = $('#circle2_4');
   var $arrow_4   = $('#arrow_4');
+  var $timeline_text_4  = $('#timeline-text_4');
   var expand   = 'expand';
   $border_4.on( 'click', function() {
     if (! $timeline_4.hasClass( expand ) ) {
       $timeline_4.addClass( expand );
       $circle2_4.addClass( expand );
       $arrow_4.addClass( expand );
+      $timeline_text_4.addClass( expand );
     }else {
       $timeline_4.removeClass( expand );
       $circle2_4.removeClass( expand );
       $arrow_4.removeClass( expand );
+      $timeline_text_4.removeClass( expand );
     }
   });
 
