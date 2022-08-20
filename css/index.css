@@ -1106,12 +1106,10 @@ contens
   color: transparent;
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,0) 15%);
   -webkit-background-clip: text;
-  transition: all .5s;
 }
 
 #timeline-text_1.expand{
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,1) 100%);
-  transition: all .5s;
 }
 
 /* 2 */
@@ -1145,12 +1143,10 @@ contens
   color: transparent;
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,0) 15%);
   -webkit-background-clip: text;
-  transition: all .5s;
 }
 
 #timeline-text_2.expand{
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,1) 100%);
-  transition: all .5s;
 }
 
 /* 3 */
@@ -1184,12 +1180,10 @@ contens
   color: transparent;
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,0) 15%);
   -webkit-background-clip: text;
-  transition: all .5s;
 }
 
 #timeline-text_3.expand{
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,1) 100%);
-  transition: all .5s;
 }
 /* 4 */
 #timeline_4{
@@ -1222,12 +1216,10 @@ contens
   color: transparent;
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,0) 15%);
   -webkit-background-clip: text;
-  transition: all .5s;
 }
 
 #timeline-text_4.expand{
   background-image: linear-gradient(180deg, rgba(225,225,225,1) 0, rgba(225,225,225,1) 100%);
-  transition: all .5s;
 }
 /*-----------------------------------Paper----------------------------------*/
 table {
@@ -1236,6 +1228,7 @@ table {
 table, td, th{
   border: solid 1px red;
   font-weight: normal;
+  text-align: left;
 }
 #paper{
   margin: 50px 20px 30px;
