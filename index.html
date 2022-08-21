@@ -24,18 +24,18 @@
 
 
   <div class="video">
-    <video class="video_pc" autoplay loop muted playsinline>
+    <video class="video_pc" id="top_comp" controls autoplay loop muted playsinline>
       <source src="img/top_comp.mp4" type="video/mp4"/>
     </video>
         
-    <video class="video_sp" autoplay loop muted playsinline>
+    <video class="video_sp" id="top_small" controls autoplay loop muted playsinline>
       <source src="img/top_small.mp4" type="video/mp4"/>
     </video>
   </div>
 
   
 
-  <div class = "btn">
+  <div class = "btn" id="back">
     <div id = "remove"> </div>
     <img id="aboutme_1" src="img/aboutme_1.png">
     <img id="aboutme_2" src="img/aboutme_2.png">
@@ -188,7 +188,7 @@
             <div class="timeline-border" id="timeline-border_1">
             <div class="circle_1"></div>
             <div class="circle_2" id=circle2_1></div>
-              <div class="timeline-year">2016 (高校二年)</div>
+              <div class="timeline-year">2016 (高校2年)</div>
               <div class="timeline-content" id="timeline_1">
                 <div class="timeline-title">ヘルスケアデバイス開発</div>
                 <div class="timeline-text" id="timeline-text_1">
@@ -253,7 +253,23 @@
                 </div><!--TIMELINE-CONTENT--> 
                 <div class="timeline-arrow" id="arrow_4"></div>
               </div><!--TIMELINE-BORDER--> 
-          
+
+
+              <div class="timeline-border" id="timeline-border_5">
+                  <div class="circle_1"></div>
+                  <div class="circle_2" id=circle2_5></div>
+                  <div class="timeline-year">2022 (大学5年)</div>
+                  <div class="timeline-content" id="timeline_5">  
+                    <div class="timeline-title">Q-Assist講師</div>
+                    <div class="timeline-text" id="timeline-text_5">
+                      #プログラミング教育　#Q-Assist　# 医療プログラミング
+                      </br></br>
+                        医学部生の多くの方が利用している、メディックメディア様の "Q-Assist prime" にて、「医学生のためのプログラミング勉強会」の講師をさせていただきました。</br></br>
+                    </div> 
+                    <img class="timeline-img_5" src="img/timeline_5.png">
+                  </div><!--TIMELINE-CONTENT--> 
+                  <div class="timeline-arrow" id="arrow_5"></div>
+                </div><!--TIMELINE-BORDER--> 
           
           
           </div><!--TIMELINE-->
@@ -571,7 +587,6 @@
   <script src="https://blog.appsol-one.com/custom/sliderPro/jquery.sliderPro.min.js" type="text/javascript" defer=""></script>
   
   <script type="text/javascript">
-  
   window.onload = ()=>{
   const spinner = document.getElementById('loading');
   // Add .loaded to .loading
@@ -604,6 +619,16 @@
     
   });
 
+  var $movie_speed  = $('#back');
+  $movie_speed.on('touchstart', function() {
+    video = document.getElementById('top_small');
+    video.playbackRate = 7;
+  });
+  $movie_speed.on( 'touchend', function() {
+    video = document.getElementById('top_small');
+    video.playbackRate = 1;
+  });
+
 
   (function($) {
     var $nav   = $('#header-box');
@@ -618,6 +643,7 @@
         $nav.removeClass( open );
       }
     });
+      
 
     var $back   = $('#aboutme_back');
     var $content   = $('#aboutme_content');
@@ -769,6 +795,30 @@
     }
   });
 
+  var $border_5  = $('#timeline-border_5');
+  var $timeline_5   = $('#timeline_5');
+  var $circle2_5   = $('#circle2_5');
+  var $arrow_5   = $('#arrow_5');
+  var $timeline_text_5  = $('#timeline-text_5');
+  var expand   = 'expand';
+  $border_5.on( 'click', function() {
+    if (! $timeline_5.hasClass( expand ) ) {
+      $timeline_5.addClass( expand );
+      $circle2_5.addClass( expand );
+      $arrow_5.addClass( expand );
+      $timeline_text_5.addClass( expand );
+      
+    }else {
+      $timeline_5.removeClass( expand );
+      $circle2_5.removeClass( expand );
+      $arrow_5.removeClass( expand );
+      $timeline_text_5.removeClass( expand );
+      
+    }
+  });
+
+  
+    
     var $ABOUTME   = $('#ABOUTME');
     // menu open close
     $ABOUTME.on( 'click', function() {
