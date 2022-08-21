@@ -691,6 +691,7 @@
   var $circle2_1   = $('#circle2_1');
   var $arrow_1   = $('#arrow_1');
   var $timeline_text_1  = $('#timeline-text_1');
+  const videoElement = document.querySelector("video");
   var expand_1   = 'expand';
   $border_1.on( 'click', function() {
     if (! $timeline_1.hasClass( expand ) ) {
@@ -698,11 +699,13 @@
       $circle2_1.addClass( expand );
       $arrow_1.addClass( expand );
       $timeline_text_1.addClass( expand );
+      videoElement.playbackRate = 4.0;
     }else {
       $timeline_1.removeClass( expand );
       $circle2_1.removeClass( expand );
       $arrow_1.removeClass( expand );
       $timeline_text_1.removeClass( expand );
+      videoElement.playbackRate = 1.0;
     }
   });
 
